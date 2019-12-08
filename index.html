@@ -13,29 +13,17 @@
 </head>
 
 <body>
-    <div class="container">
+    <div id="container" class="container">
         <form class="">
           <h1>Reservation Form</h1>
           <span class="custom-dropdown">
             Select Activity:
-            <select>
-              <option>
-                Act 1
-              </option>
-              <option>
-                Act 2
-              </option>
+            <select id="activityOption">
             </select>
           </span>
           <span class="custom-dropdown">
             Choose Session:
-              <select>
-                <option>
-                  Act 1
-                </option>
-                <option>
-                  Act 2
-                </option>
+              <select id="sessionOption">
               </select>
           </span>
           <div class="input-section">
@@ -48,20 +36,24 @@
               <input class="input-form" placeholder="Email" type="text" maxlength="30" />
             </span>
             <span class="custom-dropdown">
-              Choose Session:
-              <select>
-                <option>
-                  Act 1
-                </option>
-                <option>
-                  Act 2
-                </option>
+              No. Of Persons:
+              <select id="noOfPersonOption">
               </select>
             </span>
-          </div>          
+          </div>       
         </form>
+        <button onClick='makeReservation()'>
+            Make Reservation
+        </button>
+        <div class="reservations">
+          <table>
+            <thead>Reservations</thead></tr>
+            <tbody id="table-data">
+            </tbody>
+          </table>
+        </div>
       </div>
 </body>
-<script src="./script.js"></script>
+<script src="./script.js" ></script>
 
 </html>
