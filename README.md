@@ -5,7 +5,7 @@
 
 ### https://bumsyalao.github.io/reservation-form/
 
-### How to use it:
+### How to use:
 - Download or clone the repository
 - Run index.html on any browser
 - Or click the github page link above
